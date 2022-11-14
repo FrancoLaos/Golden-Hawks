@@ -1,0 +1,171 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* estilos del header para todas las paginas */
+header{
+    background-color: black;
+}
+header h1{
+    color: #a87b05;
+    font-size: 2rem;
+}
+.titulo{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+header img{
+    width: 30%;
+}
+header nav{
+    text-align: left;
+    padding: 0.7rem 1rem;
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    font-size: 1rem;
+    background-color: #a87b05;
+    padding: 1px 5px 1px 5px;
+    margin-top: 5px;
+    box-shadow: 1px 1px 2px #e9b125;
+    border-radius: 100px;
+    text-shadow: 1px 1px 5px black;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+      /* estilos de main para index */
+main .bienvenidos{
+    background-image: url(../img/img-cabina320.png);
+    background-size: cover;
+    height: 18rem;
+}
+main .texto-bienvenidos{
+    position: relative;
+    top: 100px;
+    color: whitesmoke;
+    padding: 0.3rem 1rem 0rem 1rem;
+}
+main .cessna{
+    width: 100%;
+}
+main .online{
+    padding: 0.5rem 1rem 1rem 1rem;
+}
+main .online h2{
+    color: rgb(160, 16, 16);
+    padding-bottom: 1rem;
+}
+/* estilos de main para programas */
+
+/* estilos de footer para todas las paginas */
+footer h4{
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+/* mq */
+@media screen and (min-width: 800px){
+    /* estilo header pantalla monitor */
+    header{
+        display: block;
+        display: flex;        
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.7rem 4rem 1rem 0.3rem;
+    }
+    header img{
+        width: 14%;
+    }
+    header h1{
+        font-size: 3.5rem;
+    }
+    header .titulo{
+        width: 60%;
+    }
+    header nav ul{
+        display: block;
+        display: flex;
+    }
+    header nav ul li{
+        display: block;
+        font-size: 1.4rem;
+        padding: 1px 10px 1px 10px;
+        margin: 0px 7px 0px 7px;
+    }
+    /* estilo main pantalla monitor */
+    main .bienvenidos{
+        background-size: cover;
+        height: 60rem;
+    }
+    main .texto-bienvenidos{
+        font-size: 2rem;
+        position: relative;
+        top: 300px;
+    }
+    main .contenedor{
+        font-size: 1.5rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: grid;
+        grid-template-areas: 
+            "img-cessna online online"
+            "img-cessna caracteristica1 caracteristica3"
+            "img-cessna caracteristica2 caracteristica4";
+    }
+    main .img-cessna{
+        margin: 1rem 0rem 1rem 5rem;
+        grid-area: img-cessna;
+    }
+    main .cessna{
+        width: 150%;
+        box-shadow: 5px 5px 5px black;
+    }
+    main .online{
+        grid-area: online;
+        padding: 2rem 0rem 0rem 15rem;
+    }
+    main .online h2{
+        text-shadow: 1px 1px 2px black;
+        font-size: 3rem;
+    }
+    main .caracteristica1{
+        grid-area: caracteristica1;
+        display: flex;
+        padding-left: 15rem;
+    }
+    main .caracteristica2{
+        grid-area: caracteristica2;
+        display: flex;
+        padding-left: 15rem;
+    }
+    main .caracteristica3{
+        grid-area: caracteristica3;
+        display: flex;
+    }
+    main .caracteristica4{
+        grid-area: caracteristica4;
+        display: flex;
+    }
+    main .img-check{
+        width: 7%;
+        height: 25%;
+        margin-top: 0.8rem;
+        margin-right: 1rem;
+    }
+    /* estilo footer pantalla monitor */
+    footer h4{
+        font-size: 1rem;
+    }
+}
