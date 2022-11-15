@@ -63,8 +63,70 @@ main .online h2{
     color: rgb(160, 16, 16);
     padding-bottom: 1rem;
 }
+main .contenedor .caracteristica1{
+    display: block;
+    display: flex;
+    margin-left: 5.5rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+main .contenedor .caracteristica2{
+    display: block;
+    display: flex;
+    margin-left: 5.5rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+main .contenedor .caracteristica3{
+    display: block;
+    display: flex;
+    margin-left: 5.5rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+main .contenedor .caracteristica4{
+    display: block;
+    display: flex;
+    margin-left: 5.5rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+main .contenedor .img-check{
+    width: 8%;
+    height: 10%;
+    padding-right: 0.5rem;
+}
 /* estilos de main para programas */
-
+main .programa .programa-texto{
+    margin: 1rem; 
+}
+.programa-titulo{
+    margin-bottom: 0.5rem;
+    font-size: 1.7rem;
+}
+.programa-parrafo{
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
+main .programa .programa-boton{
+    text-align: center;
+    background-color: #a87b05;
+    border-radius: 1.5rem;
+    padding: 0.2rem;
+}
+main .programa img{
+    width: 100%;
+    margin-top: 0.5rem;          
+}
+main .cursos{
+    text-align: center;
+    margin: 1rem 2rem 3rem 2rem;
+}
+main .cursos img{
+    width: 20%;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
 /* estilos de footer para todas las paginas */
 footer h4{
     text-align: center;
@@ -72,14 +134,13 @@ footer h4{
     color: whitesmoke;
     font-size: 1rem;
 }
-
 /* mq */
 @media screen and (min-width: 800px){
     /* estilo header pantalla monitor */
     header{
         display: block;
         display: flex;        
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         padding: 0.7rem 4rem 1rem 0.3rem;
     }
@@ -112,57 +173,103 @@ footer h4{
         position: relative;
         top: 300px;
     }
+    main .texto-bienvenidos h2{
+        padding-bottom: 1.3rem;
+    }
     main .contenedor{
         font-size: 1.5rem;
-        margin-left: 10rem;
-        margin-right: 10rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        display: block;
         display: grid;
+        margin: 4rem 0rem;
+        grid-template-columns: 40% 30% 30%;
+        grid-template-rows: 40% 30% 30%;
         grid-template-areas: 
             "img-cessna online online"
-            "img-cessna caracteristica1 caracteristica3"
-            "img-cessna caracteristica2 caracteristica4";
+            "img-cessna caracteristica1 caracteristica2"
+            "img-cessna caracteristica3 caracteristica4";
     }
-    main .img-cessna{
-        margin: 1rem 0rem 1rem 5rem;
+    main .contenedor .img-cessna{
         grid-area: img-cessna;
+        width: 60%;
+        justify-self: center;
     }
-    main .cessna{
-        width: 150%;
-        box-shadow: 5px 5px 5px black;
-    }
-    main .online{
+    main .contenedor .online{
         grid-area: online;
-        padding: 2rem 0rem 0rem 15rem;
+        align-self: center;
+        padding-right: 5.5rem;
     }
-    main .online h2{
-        text-shadow: 1px 1px 2px black;
-        font-size: 3rem;
-    }
-    main .caracteristica1{
+    main .contenedor .caracteristica1{
         grid-area: caracteristica1;
-        display: flex;
-        padding-left: 15rem;
+        margin-left: 3rem;
     }
-    main .caracteristica2{
+    main .contenedor .caracteristica2{
         grid-area: caracteristica2;
-        display: flex;
-        padding-left: 15rem;
+        margin-left: 0rem;
     }
-    main .caracteristica3{
+    main .contenedor .caracteristica3{
         grid-area: caracteristica3;
-        display: flex;
+        margin-left: 3rem;
     }
-    main .caracteristica4{
+    main .contenedor .caracteristica4{
         grid-area: caracteristica4;
-        display: flex;
+        margin-left: 0rem;
+        margin-bottom: 0rem;
     }
-    main .img-check{
-        width: 7%;
+    main .contenedor .img-check{
+        width: 8%;
         height: 25%;
-        margin-top: 0.8rem;
-        margin-right: 1rem;
+    }
+    /* estilo para main de programa-monitor */
+    main .programa{
+        display: block;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+    }
+    main .programa .programa-texto{
+        width: 50%;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    main .programa .programa-texto .programa-titulo{
+        font-size: 3.3rem;
+        padding-bottom: 1rem;
+    }
+    main .programa .programa-texto .programa-parrafo{
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    main .programa .programa-boton{
+        width: 50%;
+        margin-left: 15rem;
+    }
+    main .programa .programa-img{
+        text-align: center;
+    }
+    main .programa img{
+        width: 70%;
+        margin-top: 2rem;
+        border: 5px solid black;
+        border-radius: 5rem;
+    }
+    main .cursos{
+        display: block;
+        display: flex;
+        margin-top: 5rem;
+    }
+    main .cursos .cursos-blanco{
+        background-color: whitesmoke;
+    }
+    main .cursos .cursos-negro{
+        background-color: black;
+        color: whitesmoke;
+    }
+    main .cursos h3{
+        padding: 0.5rem 0rem;
+    }
+    main .cursos p{
+        padding: 0rem 0.5rem 1rem 0.5rem;
     }
     /* estilo footer pantalla monitor */
     footer h4{
