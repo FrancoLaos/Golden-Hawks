@@ -127,6 +127,37 @@ main .cursos img{
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 }
+/* estilos para main de ubicacion */
+.ajuste{
+    margin: 0rem 1rem;
+}
+main .direccion{
+    padding: 1rem 0rem;
+}
+main .direccion h2{
+    padding-bottom: 0.5rem;
+}
+main .aeropuerto{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+}
+main .aeropuerto ul{
+    padding-left: 1rem;
+    list-style: circle;
+    padding-bottom: 1rem;
+}
+main .aeropuerto img{
+    width: 100%;
+}
+main .maps{
+    padding-bottom: 2rem;
+}
+main .maps img{
+    width: 100%;
+}
 /* estilos de footer para todas las paginas */
 footer h4{
     text-align: center;
