@@ -41,7 +41,7 @@ header nav ul li a{
     text-decoration: none;
     color: whitesmoke;
 }
-      /* estilos de main para index */
+      /* estilos de main para index celular*/
 main .bienvenidos{
     background-image: url(../img/img-cabina320.png);
     background-size: cover;
@@ -96,7 +96,7 @@ main .contenedor .img-check{
     height: 10%;
     padding-right: 0.5rem;
 }
-/* estilos de main para programas */
+/* estilos de main para programas celular */
 main .programa .programa-texto{
     margin: 1rem; 
 }
@@ -127,29 +127,33 @@ main .cursos img{
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 }
-/* estilos para main de ubicacion */
+/* estilos para main de ubicacion celular */
 .ajuste{
     margin: 0rem 1rem;
 }
 main .direccion{
-    padding: 1rem 0rem;
+    margin: 1.5rem 0rem;
+    padding: 1rem;
+        box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+                    0 0  0 2px rgb(255,255,255),
+                    0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
 main .direccion h2{
     padding-bottom: 0.5rem;
 }
 main .aeropuerto{
-    display: block;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding-bottom: 1rem;
+    margin: 1.7rem 0rem;
+    padding: 1rem;
+        box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+                    0 0  0 2px rgb(255,255,255),
+                    0.3em 0.3em 1em rgba(0,0,0,0.3);  
 }
 main .aeropuerto ul{
     padding-left: 1rem;
     list-style: circle;
     padding-bottom: 1rem;
 }
-main .aeropuerto img{
+main .pista img{
     width: 100%;
 }
 main .maps{
@@ -158,6 +162,47 @@ main .maps{
 main .maps img{
     width: 100%;
 }
+/* estilos de eventos celular */
+.ajuste-eventos{
+    margin: 1rem 1rem;
+}
+main .redes{
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+main div .img-redes{
+    list-style: none;
+    
+}
+main div .img-redes li{
+    align-items: center;
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+}
+main div .img-redes li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.668);
+}
+main div ul li .fb{
+    width: 4%;
+}
+main div ul li .ig{
+    width: 4%;
+}
+.ajuste-eventos .instagram{
+    
+    text-align: center;
+    margin-top: 1rem;
+}
+.ajuste-eventos .instagram iframe{
+    padding-bottom: 2rem;
+}
+/* estilos para contactanos celular *?
+
+
+
+
+
 /* estilos de footer para todas las paginas */
 footer h4{
     text-align: center;
@@ -250,7 +295,7 @@ footer h4{
         width: 8%;
         height: 25%;
     }
-    /* estilo para main de programa-monitor */
+    /* estilo para main de programas-monitor */
     main .programa{
         display: block;
         display: flex;
@@ -302,6 +347,84 @@ footer h4{
     main .cursos p{
         padding: 0rem 0.5rem 1rem 0.5rem;
     }
+    /* estilos para ubicacion monitor */
+    .ajuste{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.7fr 1fr;
+        grid-template-areas: 
+        "direccion aeropuerto"
+        "pista maps";
+        justify-items: center;
+        align-items: center;
+    }
+    main .direccion{
+        grid-area: direccion;
+        font-size: 1.5rem;
+        padding: 1rem;
+        box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+                    0 0  0 2px rgb(255,255,255),
+                    0.3em 0.3em 1em rgba(0,0,0,0.3);
+    }
+    main .aeropuerto{
+        grid-area: aeropuerto;
+        font-size: 1.7rem;
+        padding: 1rem;
+        box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+                    0 0  0 2px rgb(255,255,255),
+                    0.3em 0.3em 1em rgba(0,0,0,0.3);
+    }
+    main .pista{
+        grid-area: pista;
+        width: 80%;
+    }
+    main .pista img{
+        border: 1px solid black;
+        box-shadow: 2px 2px 5px;
+    }
+    main .maps{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        grid-area: maps;
+        align-items: center;
+    }
+    main .maps a{
+        font-size: 1.5rem;
+    }
+    main .maps img{
+        width: 80%;
+        border: 1px solid black;
+        box-shadow: 2px 2px 5px;
+    }
+    /* estilos de eventos monitor */
+    .ajuste-eventos{
+        margin: 1rem 3.5rem;
+    }
+    main .redes{
+        font-size: 2rem;
+    }
+    main div .img-redes{
+        font-size: 1.5rem;
+    }
+    main div .img-redes .fb{
+        width: 2%;
+    }
+    main div .img-redes .ig{
+        width: 2%;
+    }
+    main .instagram{ 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    main .instagram iframe{
+        width: 500px;
+        height: 687px;
+    }
+    /* estilos de contactanos monitor */
+
+
     /* estilo footer pantalla monitor */
     footer h4{
         font-size: 1rem;
