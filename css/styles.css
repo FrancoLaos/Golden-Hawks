@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: whitesmoke;
+}
 /* estilos del header para todas las paginas */
 header{
     background-color: black;
@@ -197,13 +200,73 @@ main div ul li .ig{
 .ajuste-eventos .instagram iframe{
     padding-bottom: 2rem;
 }
-/* estilos para contactanos celular *?
-
-
-
-
+/* estilos para contactanos celular */
+.fondo{
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.contactanos{
+    padding: 1rem;
+    color: black;
+}
+.contactanos p{
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+.formulario{
+    width: 95%;
+    background-color: #24303c;
+    padding: 1.8rem;
+    margin: 0.2rem 0rem 2rem 0.5rem;
+    border-radius: 0.5rem;
+    color: whitesmoke;
+    box-shadow: 1rem 1rem 2rem black;
+}
+.formulario h3{
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+.formulario .botones{
+    width: 100%;
+    background-color: #24303c;
+    padding: 0.6rem;
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+    border: 1px solid #1f53c5;
+    font-size: 1.1rem;
+}
+.formulario p{
+    height: 2.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+.formulario a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.formulario a:hover{
+    color: whitesmoke;
+    text-decoration: underline;
+}
+.formulario .registrar{
+    width: 100%;
+    background-color: #1f53c5;
+    border: none;
+    padding: 0.8rem;
+    color: whitesmoke;
+    font-size: 1rem;
+}
 
 /* estilos de footer para todas las paginas */
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 0rem;
+}
+.footer-especial{
+    position: absolute;
+}
 footer h4{
     text-align: center;
     background-color: black;
@@ -423,9 +486,19 @@ footer h4{
         height: 687px;
     }
     /* estilos de contactanos monitor */
-
-
+    .contactanos{
+        padding: 1rem 2rem;
+    }
+    .formulario{
+        width: 30%;
+        position: relative;
+        left: 40rem;
+        margin-bottom: 3rem;
+    }
     /* estilo footer pantalla monitor */
+    .footer-especial{
+        position: absolute;
+    }
     footer h4{
         font-size: 1rem;
     }
