@@ -254,7 +254,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
 .formulario p{
     height: 2.5rem;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 2rem;
 }
 .formulario a{
@@ -281,6 +281,7 @@ footer{
 }
 .footer-especial{
     position: absolute;
+    bottom: 0px;
 }
 footer h4{
     text-align: center;
@@ -502,10 +503,10 @@ footer h4{
         padding: 1rem 2rem;
     }
     .espacio-formulario{
-        margin: 0% 30%;
+        margin: 0% 35%;
     }
     .formulario{
-        width: 90%;
+        width: 100%;
         position: relative;
         
         margin-bottom: 3rem;
