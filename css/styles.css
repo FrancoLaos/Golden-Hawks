@@ -48,12 +48,11 @@ header nav ul li a{
     body{
         font-family: 'Arimo', sans-serif;
     }
-    /* estilos de main para index celular*/
 main .bienvenidos{
     background-image: url(../img/img-cabina320.png);
     background-size: cover;
     height: 18rem;
-}
+}   
 main .texto-bienvenidos{
     position: relative;
     top: 100px;
@@ -148,6 +147,11 @@ main .cursos img{
     padding: 0rem 0.5rem 1rem 0.5rem;
 }
 /* estilos para main de ubicacion celular */
+header .menu-ubicacion{
+    padding-left: 0rem;
+    margin-bottom: 0rem;
+    width: 100%;
+}
 .ajuste{
     margin: 0rem 1rem;
 }
@@ -171,16 +175,11 @@ main .aeropuerto{
 main .aeropuerto ul{
     padding-left: 1rem;
     list-style: circle;
-    padding-bottom: 1rem;
 }
-main .pista img{
+.footer-ubicacion{
+    position: absolute;
     width: 100%;
-}
-main .maps{
-    padding-bottom: 2rem;
-}
-main .maps img{
-    width: 100%;
+    bottom: 0px;
 }
 /* estilos de eventos celular */
 .ajuste-eventos{
@@ -463,29 +462,16 @@ footer h4{
                     0 0  0 2px rgb(255,255,255),
                     0.3em 0.3em 1em rgba(0,0,0,0.3);
     }
-    main .pista{
-        grid-area: pista;
-        width: 80%;
+    #carouselExampleCaptions{
+        margin-left: 100%;
+        width: 100%;
     }
-    main .pista img{
-        border: 1px solid black;
-        box-shadow: 2px 2px 5px;
+    .footer-ubicacion{
+        margin-top: 2rem;
+        position: relative;
+        bottom: 0px;
     }
-    main .maps{
-        display: block;
-        display: flex;
-        flex-direction: column;
-        grid-area: maps;
-        align-items: center;
-    }
-    main .maps a{
-        font-size: 1.5rem;
-    }
-    main .maps img{
-        width: 80%;
-        border: 1px solid black;
-        box-shadow: 2px 2px 5px;
-    }
+    
     /* estilos de eventos monitor */
     .ajuste-eventos{
         margin: 1rem 3.5rem;
@@ -515,10 +501,13 @@ footer h4{
     .contactanos{
         padding: 1rem 2rem;
     }
+    .espacio-formulario{
+        margin: 0% 30%;
+    }
     .formulario{
-        width: 30%;
+        width: 90%;
         position: relative;
-        left: 40rem;
+        
         margin-bottom: 3rem;
     }
     /* estilo footer pantalla monitor */
