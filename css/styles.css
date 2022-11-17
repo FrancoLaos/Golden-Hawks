@@ -44,7 +44,11 @@ header nav ul li a{
     text-decoration: none;
     color: whitesmoke;
 }
-      /* estilos de main para index celular*/
+    /* estilo de letra para todas las paginas */
+    body{
+        font-family: 'Arimo', sans-serif;
+    }
+    /* estilos de main para index celular*/
 main .bienvenidos{
     background-image: url(../img/img-cabina320.png);
     background-size: cover;
@@ -122,16 +126,26 @@ main .programa .programa-boton{
 }
 main .programa img{
     width: 100%;
-    margin-top: 0.5rem;          
+    margin-top: 0.5rem;
+    border: 1px solid black;          
 }
 main .cursos{
     text-align: center;
     margin: 1rem 2rem 3rem 2rem;
 }
+main .cursos .cursos-blanco{
+    background-color: #a87b05;
+    padding: 0rem 0.5rem 1rem 0.5rem;
+}
+main .cursos .cursos-negro{
+    background-color: black;
+    color: whitesmoke;
+    padding: 0rem 0.5rem 1rem 0.5rem;
+}
 main .cursos img{
     width: 20%;
     margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
+    padding: 0rem 0.5rem 1rem 0.5rem;
 }
 /* estilos para main de ubicacion celular */
 .ajuste{
@@ -402,7 +416,7 @@ footer h4{
         margin-top: 5rem;
     }
     main .cursos .cursos-blanco{
-        background-color: whitesmoke;
+        background-color: #a87b05;
         transition: 0.5s;
     }
     main .cursos .cursos-blanco:hover{
