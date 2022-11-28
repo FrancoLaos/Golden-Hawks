@@ -1,0 +1,167 @@
+/* estilos para index-celular */
+main{
+    .bienvenidos{
+        background-image: url(../img/img-cabina320.png);
+        background-size: cover;
+        height: 250px;
+        .texto-bienvenidos{
+            position: relative;
+            color: whitesmoke;
+            top: 50px;
+            padding: 0.3rem 1rem 0rem 1rem;
+            h2{
+                padding-bottom: 0.5rem;
+            }
+        }
+    }
+    .contenedor{
+        .img-cessna{
+            .cessna{
+                width: 100%;
+            }
+        }
+        .online{
+            padding: 0.5rem 1rem 1rem 1rem;
+            h2{
+                color: rgb(160, 16, 16);
+                padding-bottom: 1rem;
+            }
+        }
+        .caracteristica1{
+            display: block;
+            margin-left: 5.5rem;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .caracteristica2{
+            display: block;
+            margin-left: 5.5rem;
+            margin-bottom: 1rem;
+            align-items: center;
+            display: flex;
+        }
+        .caracteristica3{
+            display: block;
+            margin-left: 5.5rem;
+            margin-bottom: 1rem;
+            align-items: center;
+            display: flex;
+        }
+        .caracteristica4{
+            display: block;
+            margin-left: 5.5rem;
+            margin-bottom: 2rem;
+            align-items: center;
+            display: flex;
+        }
+        .img-check{
+            width: 8%;
+            padding-right: 0.5rem;
+            height: 10%;
+        }
+    }
+}
+/* mq index para tablet desde 800 a 1200px */
+@media screen and (min-width: 800px){
+    main{
+        .bienvenidos{
+            background-size: cover;
+            height: 500px;
+            .texto-bienvenidos{
+                font-size: 1.5rem;
+                position: relative;
+                top: 10rem;
+                h2{
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+        .contenedor{
+            font-size: 1.2rem;
+            display: block;
+            display: grid;
+            margin: 0rem 0rem;
+            padding: 3.5rem 0rem;
+            grid-template-columns: 40% 30% 30%;
+            grid-template-rows: 50% 25% 25%;
+            grid-template-areas: 
+                "img-cessna online online"
+                "img-cessna caracteristica1 caracteristica2"
+                "img-cessna caracteristica3 caracteristica4";
+            .img-cessna{
+                grid-area: img-cessna;
+                width: 95%;
+                justify-self: center;
+            }
+            .online{
+                grid-area: online;
+                align-self: center;
+            }
+            .caracteristica1{
+                grid-area: caracteristica1;
+                margin-left: 1rem;
+                img{
+                    width: 12%;
+                    height: 25%;
+                }
+            }
+            .caracteristica2{
+                grid-area: caracteristica2;
+                margin-left: 1rem;
+                img{
+                    width: 12%;
+                    height: 25%;
+                }
+            }
+            .caracteristica3{
+                grid-area: caracteristica3;
+                margin-left: 1rem;
+                img{
+                    width: 12%;
+                    height: 25%;
+                }
+            }
+            .caracteristica4{
+                grid-area: caracteristica4;
+                margin-left: 0.6rem;
+                margin-right: 1rem;
+                margin-bottom: 0rem;
+                img{
+                    width: 12%;
+                    height: 25%;
+                }
+            }
+        }
+    }
+}
+/* mq index para monitor desde 1200px */
+@media screen and (min-width: 1200px){
+    main{
+        .bienvenidos{
+            height: 900px;
+            background-size: cover;
+            .texto-bienvenidos{
+                font-size: 2rem;
+                position: relative;
+                top: 15rem;
+                h2{
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+        .contenedor{
+            .img-cessna{
+                width: 75%;
+            }
+            .online{
+                h2{
+                    font-size: 2.2rem;
+                }
+                p{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+/* estilos de programas-celular */
+main{
+    .programa{
+        .programa-texto{
+            padding: 1rem;
+            text-align: center;
+            .programa-titulo{
+                margin-bottom: 0.5rem;
+                font-size: 1.7rem;
+            }
+            .programa-parrafo{
+                padding-bottom: 1rem;
+                font-size: 1.1rem;
+            }
+            .programa-boton{
+                border-radius: 1.5rem;
+                padding: 0.3rem 0.7rem;
+                text-decoration: none;
+                font-weight: bold;
+                color: black;
+                background-color: #a87b05;
+            }
+        }
+        .programa-img{
+            img{
+                width: 100%;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+    .cursos{
+        text-align: center;
+        margin: 1rem 2rem 3rem 2rem;
+        .cursos-blanco{
+            background-color: #a87b05;
+            padding: 0rem 0.5rem 1rem 0.5rem;
+        }
+        .cursos-negro{
+            color: whitesmoke;
+            padding: 0rem 0.5rem 1rem 0.5rem;
+            background-color: black;
+        }
+        img{
+            margin-top: 1.5rem;
+            padding: 0rem 0.5rem 1rem 0.5rem;
+            width: 20%;
+        }
+    }
+}
+/* mq programas para tablet 800 a 1200 */
+@media screen and (min-width: 800px){
+    main{
+        .programa{
+            display: block;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            justify-content: center;
+            .programa-texto{
+                width: 100%;
+                text-align: center;
+                .programa-titulo{
+                    font-size: 2.3rem;
+                    padding-bottom: 1rem;
+                }
+                .programa-parrafo{
+                    font-size: 1.2rem;
+                    padding-bottom: 2rem;
+                }
+                .programa-boton{
+                    width: 50%;
+                    font-size: 1.7rem;
+                }
+            }
+            .programa-img{
+                text-align: center;
+                img{
+                    width: 85%;
+                    margin-top: 2rem;
+                    border: 5px solid black;
+                    border-radius: 5rem;
+                }
+            }           
+        }
+        .cursos{
+            display: block;
+            display: flex;
+            margin-top: 5rem;
+            .cursos-blanco{
+                background-color: #a87b05;
+                transition: 0.5s;
+                h3{
+                    padding: 0.5rem 0rem;
+                }
+                p{
+                    padding: 0rem 0.5rem 1rem 0.5rem; 
+                }
+            }
+            .cursos-blanco:hover{
+                transform: scale(1.1);
+            }
+            .cursos-negro{
+                background-color: black;
+                color: whitesmoke;
+                transition: 0.5s;
+                h3{
+                    padding: 0.5rem 0rem;
+                }
+                p{
+                    padding: 0rem 0.5rem 1rem 0.5rem; 
+                }
+            }
+            .cursos-negro:hover{
+                transform: scale(1.1);
+            }
+
+        }
+    }
+}
+/* mq programas para monitor desde 1200 */
+@media screen and (min-width: 1200px){
+    main{
+        .programa{
+            display: block;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            justify-content: center;
+            margin: 0rem 5rem;
+            .programa-texto{
+                width: 60%;
+                text-align: center;
+                .programa-titulo{
+                    font-size: 3rem;
+                    padding-bottom: 1rem;
+                }
+                .programa-parrafo{
+                    font-size: 1.5rem;
+                    padding-bottom: 2rem;
+                }
+                .programa-boton{
+                    width: 50%;
+                    font-size: 2rem;
+                }
+            }
+            .programa-img{
+                text-align: center;
+                img{
+                    width: 70%;
+                    margin-top: 2rem;
+                    border: 5px solid black;
+                    border-radius: 5rem;
+                }
+            }           
+        }
+    }
+}

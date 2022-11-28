@@ -1,0 +1,122 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+/* Header para celular */
+header{
+    background-color: black;
+    h1{
+        color: #a87b05;
+        font-size: 2rem;
+    }
+    .titulo{
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    img{
+        width: 30%;
+    }
+    nav{
+        text-align: left;
+        padding: 0.7rem 1rem;
+        ul{
+            list-style: none;
+            li{
+                display: inline-block;
+                font-size: 1rem;
+                background-color: #a87b05;
+                padding: 1px 5px 1px 5px;
+                margin-top: 5px;
+                box-shadow: 1px 1px 2px #e9b125;
+                border-radius: 100px;
+                text-shadow: 1px 1px 5px black;
+                a{
+                    text-decoration: none;
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+}
+/* Header para tablet desde 800px */
+@media screen and (min-width: 800px){
+    header{
+        .titulo{
+        display: block;
+        display: flex;        
+        align-items: center;
+        padding: 0.7rem 0rem 0rem 0.3rem; 
+        }
+        img{
+            width: 140px;
+        }
+        h1{
+            font-size: 2.9rem;
+        }
+        nav{
+            ul{
+                display: block;
+                display: flex;
+                li{
+                    display: block;
+                    font-size: 1.4rem;
+                    padding: 1px 10px 1px 10px;
+                    margin: 0px 7px 0px 7px;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+/* Header para monitor desde 1200px */
+@media screen and (min-width: 1200px){
+    header{
+        display: block;
+        display: flex;        
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.7rem 0rem 1rem 0.3rem;
+        img{
+            width: 180px;
+        }
+        nav{
+            ul{
+                li{
+                }
+                li:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+/* Estilo de letras para todas las paginas */
+body{
+    font-family: 'Arimo', sans-serif;
+}
+// Import para pagina index
+@import "html/index";
+// Import para programas
+@import "html/programas";
+// Import para ubicacion
+@import "html/ubicacion";
+// Import para eventos
+
+// Import para contactanos
+
+/* estilos para footer todas las paginas */
+footer{
+    h4{
+        background-color: black;
+        color: whitesmoke;
+        text-align: center;
+    }
+}
+
+

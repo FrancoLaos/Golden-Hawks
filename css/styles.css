@@ -1,521 +1,373 @@
 /* reset */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: whitesmoke;
-}
-/* estilos del header para todas las paginas */
-header{
-    background-color: black;
-}
-header h1{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: whitesmoke; }
+
+/* Header para celular */
+header {
+  background-color: black; }
+  header h1 {
     color: #a87b05;
-    font-size: 2rem;
-}
-.titulo{
+    font-size: 2rem; }
+  header .titulo {
     display: flex;
     gap: 0.5rem;
-    align-items: center;
-}
-header img{
-    width: 30%;
-}
-header nav{
+    align-items: center; }
+  header img {
+    width: 30%; }
+  header nav {
     text-align: left;
-    padding: 0.7rem 1rem;
-}
-header nav ul{
-    list-style: none;
-}
-header nav ul li{
-    display: inline-block;
-    font-size: 1rem;
-    background-color: #a87b05;
-    padding: 1px 5px 1px 5px;
-    margin-top: 5px;
-    box-shadow: 1px 1px 2px #e9b125;
-    border-radius: 100px;
-    text-shadow: 1px 1px 5px black;
-}
-header nav ul li a{
-    text-decoration: none;
-    color: whitesmoke;
-}
-    /* estilo de letra para todas las paginas */
-    body{
-        font-family: 'Arimo', sans-serif;
-    }
-main .bienvenidos{
-    background-image: url(../img/img-cabina320.png);
-    background-size: cover;
-    height: 18rem;
-}   
-main .texto-bienvenidos{
+    padding: 0.7rem 1rem; }
+    header nav ul {
+      list-style: none; }
+      header nav ul li {
+        display: inline-block;
+        font-size: 1rem;
+        background-color: #a87b05;
+        padding: 1px 5px 1px 5px;
+        margin-top: 5px;
+        box-shadow: 1px 1px 2px #e9b125;
+        border-radius: 100px;
+        text-shadow: 1px 1px 5px black; }
+        header nav ul li a {
+          text-decoration: none;
+          color: whitesmoke; }
+
+/* Header para tablet desde 800px */
+@media screen and (min-width: 800px) {
+  header .titulo {
+    display: block;
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 0rem 0rem 0.3rem; }
+  header img {
+    width: 140px; }
+  header h1 {
+    font-size: 2.9rem; }
+  header nav ul {
+    display: block;
+    display: flex; }
+    header nav ul li {
+      display: block;
+      font-size: 1.4rem;
+      padding: 1px 10px 1px 10px;
+      margin: 0px 7px 0px 7px;
+      transition: 0.3s; } }
+
+/* Header para monitor desde 1200px */
+@media screen and (min-width: 1200px) {
+  header {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0rem 1rem 0.3rem; }
+    header img {
+      width: 180px; }
+    header nav ul li:hover {
+      transform: scale(1.2); } }
+
+/* Estilo de letras para todas las paginas */
+body {
+  font-family: 'Arimo', sans-serif; }
+
+/* estilos para index-celular */
+main .bienvenidos {
+  background-image: url(../img/img-cabina320.png);
+  background-size: cover;
+  height: 250px; }
+  main .bienvenidos .texto-bienvenidos {
     position: relative;
-    top: 100px;
     color: whitesmoke;
-    padding: 0.3rem 1rem 0rem 1rem;
-}
-main .cessna{
-    width: 100%;
-}
-main .online{
-    padding: 0.5rem 1rem 1rem 1rem;
-}
-main .online h2{
-    color: rgb(160, 16, 16);
-    padding-bottom: 1rem;
-}
-main .contenedor .caracteristica1{
+    top: 50px;
+    padding: 0.3rem 1rem 0rem 1rem; }
+    main .bienvenidos .texto-bienvenidos h2 {
+      padding-bottom: 0.5rem; }
+
+main .contenedor .img-cessna .cessna {
+  width: 100%; }
+
+main .contenedor .online {
+  padding: 0.5rem 1rem 1rem 1rem; }
+  main .contenedor .online h2 {
+    color: #a01010;
+    padding-bottom: 1rem; }
+
+main .contenedor .caracteristica1 {
+  display: block;
+  margin-left: 5.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem; }
+
+main .contenedor .caracteristica2 {
+  display: block;
+  margin-left: 5.5rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  display: flex; }
+
+main .contenedor .caracteristica3 {
+  display: block;
+  margin-left: 5.5rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  display: flex; }
+
+main .contenedor .caracteristica4 {
+  display: block;
+  margin-left: 5.5rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  display: flex; }
+
+main .contenedor .img-check {
+  width: 8%;
+  padding-right: 0.5rem;
+  height: 10%; }
+
+/* mq index para tablet desde 800 a 1200px */
+@media screen and (min-width: 800px) {
+  main .bienvenidos {
+    background-size: cover;
+    height: 500px; }
+    main .bienvenidos .texto-bienvenidos {
+      font-size: 1.5rem;
+      position: relative;
+      top: 10rem; }
+      main .bienvenidos .texto-bienvenidos h2 {
+        padding-bottom: 1rem; }
+  main .contenedor {
+    font-size: 1.2rem;
     display: block;
-    display: flex;
-    margin-left: 5.5rem;
-    margin-bottom: 1rem;
-    align-items: center;
-}
-main .contenedor .caracteristica2{
-    display: block;
-    display: flex;
-    margin-left: 5.5rem;
-    margin-bottom: 1rem;
-    align-items: center;
-}
-main .contenedor .caracteristica3{
-    display: block;
-    display: flex;
-    margin-left: 5.5rem;
-    margin-bottom: 1rem;
-    align-items: center;
-}
-main .contenedor .caracteristica4{
-    display: block;
-    display: flex;
-    margin-left: 5.5rem;
-    margin-bottom: 2rem;
-    align-items: center;
-}
-main .contenedor .img-check{
-    width: 8%;
-    height: 10%;
-    padding-right: 0.5rem;
-}
-/* estilos de main para programas celular */
-main .programa .programa-texto{
-    padding: 1rem;
-    text-align: center;
-}
-.programa-titulo{
+    display: grid;
+    margin: 0rem 0rem;
+    padding: 3.5rem 0rem;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 50% 25% 25%;
+    grid-template-areas: "img-cessna online online" "img-cessna caracteristica1 caracteristica2" "img-cessna caracteristica3 caracteristica4"; }
+    main .contenedor .img-cessna {
+      grid-area: img-cessna;
+      width: 95%;
+      justify-self: center; }
+    main .contenedor .online {
+      grid-area: online;
+      align-self: center; }
+    main .contenedor .caracteristica1 {
+      grid-area: caracteristica1;
+      margin-left: 1rem; }
+      main .contenedor .caracteristica1 img {
+        width: 12%;
+        height: 25%; }
+    main .contenedor .caracteristica2 {
+      grid-area: caracteristica2;
+      margin-left: 1rem; }
+      main .contenedor .caracteristica2 img {
+        width: 12%;
+        height: 25%; }
+    main .contenedor .caracteristica3 {
+      grid-area: caracteristica3;
+      margin-left: 1rem; }
+      main .contenedor .caracteristica3 img {
+        width: 12%;
+        height: 25%; }
+    main .contenedor .caracteristica4 {
+      grid-area: caracteristica4;
+      margin-left: 0.6rem;
+      margin-right: 1rem;
+      margin-bottom: 0rem; }
+      main .contenedor .caracteristica4 img {
+        width: 12%;
+        height: 25%; } }
+
+/* mq index para monitor desde 1200px */
+@media screen and (min-width: 1200px) {
+  main .bienvenidos {
+    height: 900px;
+    background-size: cover; }
+    main .bienvenidos .texto-bienvenidos {
+      font-size: 2rem;
+      position: relative;
+      top: 15rem; }
+      main .bienvenidos .texto-bienvenidos h2 {
+        padding-bottom: 1rem; }
+  main .contenedor .img-cessna {
+    width: 75%; }
+  main .contenedor .online h2 {
+    font-size: 2.2rem; }
+  main .contenedor .online p {
+    font-size: 1.3rem; } }
+
+/* estilos de programas-celular */
+main .programa .programa-texto {
+  padding: 1rem;
+  text-align: center; }
+  main .programa .programa-texto .programa-titulo {
     margin-bottom: 0.5rem;
-    font-size: 1.7rem;
-}
-.programa-parrafo{
-    font-size: 1.1rem;
+    font-size: 1.7rem; }
+  main .programa .programa-texto .programa-parrafo {
     padding-bottom: 1rem;
-}
-main .programa .programa-boton{
-    background-color: #a87b05;
+    font-size: 1.1rem; }
+  main .programa .programa-texto .programa-boton {
     border-radius: 1.5rem;
     padding: 0.3rem 0.7rem;
     text-decoration: none;
     font-weight: bold;
     color: black;
-}
-main .programa img{
-    width: 100%;
-    margin-top: 0.5rem;
-    border: 1px solid black;          
-}
-main .cursos{
-    text-align: center;
-    margin: 1rem 2rem 3rem 2rem;
-}
-main .cursos .cursos-blanco{
+    background-color: #a87b05; }
+
+main .programa .programa-img img {
+  width: 100%;
+  margin-top: 0.5rem; }
+
+main .cursos {
+  text-align: center;
+  margin: 1rem 2rem 3rem 2rem; }
+  main .cursos .cursos-blanco {
     background-color: #a87b05;
-    padding: 0rem 0.5rem 1rem 0.5rem;
-}
-main .cursos .cursos-negro{
-    background-color: black;
+    padding: 0rem 0.5rem 1rem 0.5rem; }
+  main .cursos .cursos-negro {
     color: whitesmoke;
     padding: 0rem 0.5rem 1rem 0.5rem;
-}
-main .cursos img{
-    width: 20%;
+    background-color: black; }
+  main .cursos img {
     margin-top: 1.5rem;
     padding: 0rem 0.5rem 1rem 0.5rem;
-}
-/* estilos para main de ubicacion celular */
-header .menu-ubicacion{
-    padding-left: 0rem;
-    margin-bottom: 0rem;
-    width: 100%;
-}
-.ajuste{
-    margin: 0rem 1rem;
-}
-main .direccion{
-    margin: 1.5rem 0rem;
-    padding: 1rem;
-        box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
-                    0 0  0 2px rgb(255,255,255),
-                    0.3em 0.3em 1em rgba(0,0,0,0.3);
-}
-main .direccion h2{
-    padding-bottom: 0.5rem;
-}
-main .aeropuerto{
-    margin: 1.7rem 0rem;
-    padding: 1rem;
-        box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
-                    0 0  0 2px rgb(255,255,255),
-                    0.3em 0.3em 1em rgba(0,0,0,0.3);  
-}
-main .aeropuerto ul{
-    padding-left: 1rem;
-    list-style: circle;
-}
-.footer-ubicacion{
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-}
-/* estilos de eventos celular */
-.ajuste-eventos{
-    margin: 1rem 1rem;
-}
-main .redes{
-    font-size: 1.2rem;
-    padding-bottom: 1rem;
-}
-main div .img-redes{
-    list-style: none;
-    
-}
-main div .img-redes li{
-    align-items: center;
-    padding-bottom: 0.5rem;
-    text-decoration: none;
-}
-main div .img-redes li a{
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.668);
-}
-main div ul li .fb{
-    width: 4%;
-}
-main div ul li .ig{
-    width: 4%;
-}
-.ajuste-eventos .instagram{
-    
-    text-align: center;
-    margin-top: 1rem;
-}
-.ajuste-eventos .instagram iframe{
-    padding-bottom: 2rem;
-}
-/* estilos para contactanos celular */
-.fondo{
-    background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-}
-.contactanos{
-    padding: 1rem;
-    color: black;
-}
-.contactanos p{
-    font-size: 1.2rem;
-    padding-top: 1rem;
-}
-.formulario{
-    width: 95%;
-    background-color: #24303c;
-    padding: 1.8rem;
-    margin: 0.2rem 0rem 2rem 0.5rem;
-    border-radius: 0.5rem;
-    color: whitesmoke;
-    box-shadow: 1rem 1rem 2rem black;
-}
-.formulario h3{
-    font-size: 1.3rem;
-    margin-bottom: 1.2rem;
-}
-.formulario .botones{
-    width: 100%;
-    background-color: #24303c;
-    padding: 0.6rem;
-    border-radius: 0.2rem;
-    margin-bottom: 1rem;
-    border: 1px solid #1f53c5;
-    font-size: 1.1rem;
-}
-.formulario p{
-    height: 2.5rem;
-    text-align: center;
-    font-size: 1rem;
-    line-height: 2rem;
-}
-.formulario a{
-    color: whitesmoke;
-    text-decoration: none;
-}
-.formulario a:hover{
-    color: whitesmoke;
-    text-decoration: underline;
-}
-.formulario .registrar{
-    width: 100%;
-    background-color: #1f53c5;
-    border: none;
-    padding: 0.8rem;
-    color: whitesmoke;
-    font-size: 1rem;
-}
-/* estilos de footer para todas las paginas */
-footer{
-    position: relative;
-    width: 100%;
-    bottom: 0rem;
-}
-.footer-especial{
-    position: absolute;
-    bottom: 0px;
-}
-footer h4{
-    text-align: center;
-    background-color: black;
-    color: whitesmoke;
-    font-size: 1rem;
-}
-/* mq */
-@media screen and (min-width: 800px){
-    /* estilo header pantalla monitor */
-    header{
-        display: block;
-        display: flex;        
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 0.7rem 4rem 1rem 0.3rem;
-    }
-    header img{
-        width: 15%;
-    }
-    header h1{
-        font-size: 3.5rem;
-    }
-    header nav ul{
-        display: block;
-        display: flex;
-    }
-    header nav ul li{
-        display: block;
-        font-size: 1.4rem;
-        padding: 1px 10px 1px 10px;
-        margin: 0px 7px 0px 7px;
-        transition: 0.3s;
-    }
-    header nav ul li:hover{
-        transform: scale(1.2);
+    width: 20%; }
 
-    }
-    /* estilo main pantalla monitor */
-    main .bienvenidos{
-        background-size: cover;
-        height: 60rem;
-    }
-    main .texto-bienvenidos{
-        font-size: 2rem;
-        position: relative;
-        top: 300px;
-    }
-    main .texto-bienvenidos h2{
-        padding-bottom: 1.3rem;
-    }
-    main .contenedor{
-        font-size: 1.5rem;
-        display: block;
-        display: grid;
-        margin: 4rem 0rem;
-        grid-template-columns: 40% 30% 30%;
-        grid-template-rows: 40% 30% 30%;
-        grid-template-areas: 
-            "img-cessna online online"
-            "img-cessna caracteristica1 caracteristica2"
-            "img-cessna caracteristica3 caracteristica4";
-    }
-    main .contenedor .img-cessna{
-        grid-area: img-cessna;
-        width: 60%;
-        justify-self: center;
-    }
-    main .contenedor .online{
-        grid-area: online;
-        align-self: center;
-        padding-right: 5.5rem;
-    }
-    main .contenedor .caracteristica1{
-        grid-area: caracteristica1;
-        margin-left: 3rem;
-    }
-    main .contenedor .caracteristica2{
-        grid-area: caracteristica2;
-        margin-left: 0rem;
-    }
-    main .contenedor .caracteristica3{
-        grid-area: caracteristica3;
-        margin-left: 3rem;
-    }
-    main .contenedor .caracteristica4{
-        grid-area: caracteristica4;
-        margin-left: 0rem;
-        margin-bottom: 0rem;
-    }
-    main .contenedor .img-check{
-        width: 8%;
-        height: 25%;
-    }
-    /* estilo para main de programas-monitor */
-    main .programa{
-        display: block;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        justify-content: center;
-    }
-    main .programa .programa-texto{
-        width: 50%;
+/* mq programas para tablet 800 a 1200 */
+@media screen and (min-width: 800px) {
+  main .programa {
+    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center; }
+    main .programa .programa-texto {
+      width: 100%;
+      text-align: center; }
+      main .programa .programa-texto .programa-titulo {
+        font-size: 2.3rem;
+        padding-bottom: 1rem; }
+      main .programa .programa-texto .programa-parrafo {
         font-size: 1.2rem;
-        text-align: center;
-    }
-    main .programa .programa-texto .programa-titulo{
-        font-size: 3.3rem;
-        padding-bottom: 1rem;
-    }
-    main .programa .programa-texto .programa-parrafo{
-        font-size: 1.5rem;
-        padding-bottom: 2rem;
-    }
-    main .programa .programa-boton{
+        padding-bottom: 2rem; }
+      main .programa .programa-texto .programa-boton {
         width: 50%;
-        font-size: 2rem;
-    }
-    main .programa .programa-img{
-        text-align: center;
-    }
-    main .programa img{
+        font-size: 1.7rem; }
+    main .programa .programa-img {
+      text-align: center; }
+      main .programa .programa-img img {
+        width: 85%;
+        margin-top: 2rem;
+        border: 5px solid black;
+        border-radius: 5rem; }
+  main .cursos {
+    display: block;
+    display: flex;
+    margin-top: 5rem; }
+    main .cursos .cursos-blanco {
+      background-color: #a87b05;
+      transition: 0.5s; }
+      main .cursos .cursos-blanco h3 {
+        padding: 0.5rem 0rem; }
+      main .cursos .cursos-blanco p {
+        padding: 0rem 0.5rem 1rem 0.5rem; }
+    main .cursos .cursos-blanco:hover {
+      transform: scale(1.1); }
+    main .cursos .cursos-negro {
+      background-color: black;
+      color: whitesmoke;
+      transition: 0.5s; }
+      main .cursos .cursos-negro h3 {
+        padding: 0.5rem 0rem; }
+      main .cursos .cursos-negro p {
+        padding: 0rem 0.5rem 1rem 0.5rem; }
+    main .cursos .cursos-negro:hover {
+      transform: scale(1.1); } }
+
+/* mq programas para monitor desde 1200 */
+@media screen and (min-width: 1200px) {
+  main .programa {
+    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 5rem; }
+    main .programa .programa-texto {
+      width: 60%;
+      text-align: center; }
+      main .programa .programa-texto .programa-titulo {
+        font-size: 3rem;
+        padding-bottom: 1rem; }
+      main .programa .programa-texto .programa-parrafo {
+        font-size: 1.5rem;
+        padding-bottom: 2rem; }
+      main .programa .programa-texto .programa-boton {
+        width: 50%;
+        font-size: 2rem; }
+    main .programa .programa-img {
+      text-align: center; }
+      main .programa .programa-img img {
         width: 70%;
         margin-top: 2rem;
         border: 5px solid black;
-        border-radius: 5rem;
-    }
-    main .cursos{
-        display: block;
-        display: flex;
-        margin-top: 5rem;
-    }
-    main .cursos .cursos-blanco{
-        background-color: #a87b05;
-        transition: 0.5s;
-    }
-    main .cursos .cursos-blanco:hover{
-        transform: scale(1.1);
-    }
-    main .cursos .cursos-negro{
-        background-color: black;
-        color: whitesmoke;
-        transition: 0.5s;
-    }
-    main .cursos .cursos-negro:hover{
-        transform: scale(1.1);
-    }
-    main .cursos h3{
-        padding: 0.5rem 0rem;
-    }
-    main .cursos p{
-        padding: 0rem 0.5rem 1rem 0.5rem;
-    }
-    /* estilos para ubicacion monitor */
-    .ajuste{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.7fr 1fr;
-        grid-template-areas: 
-        "direccion aeropuerto"
-        "pista maps";
-        justify-items: center;
-        align-items: center;
-    }
-    main .direccion{
-        grid-area: direccion;
-        font-size: 1.5rem;
-        padding: 1rem;
-        box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
-                    0 0  0 2px rgb(255,255,255),
-                    0.3em 0.3em 1em rgba(0,0,0,0.3);
-    }
-    main .aeropuerto{
-        grid-area: aeropuerto;
-        font-size: 1.7rem;
-        padding: 1rem;
-        box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
-                    0 0  0 2px rgb(255,255,255),
-                    0.3em 0.3em 1em rgba(0,0,0,0.3);
-    }
-    #carouselExampleCaptions{
-        margin-left: 100%;
-        width: 100%;
-    }
-    .footer-ubicacion{
-        margin-top: 2rem;
-        position: relative;
-        bottom: 0px;
-    }
-    
-    /* estilos de eventos monitor */
-    .ajuste-eventos{
-        margin: 1rem 3.5rem;
-    }
-    main .redes{
-        font-size: 2rem;
-    }
-    main div .img-redes{
-        font-size: 1.5rem;
-    }
-    main div .img-redes .fb{
-        width: 2%;
-    }
-    main div .img-redes .ig{
-        width: 2%;
-    }
-    main .instagram{ 
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    main .instagram iframe{
-        width: 500px;
-        height: 687px;
-    }
-    /* estilos de contactanos monitor */
-    .contactanos{
-        padding: 1rem 2rem;
-    }
-    .espacio-formulario{
-        margin: 0% 35%;
-    }
-    .formulario{
-        width: 100%;
-        position: relative;
-        
-        margin-bottom: 3rem;
-    }
-    /* estilo footer pantalla monitor */
-    .footer-especial{
-        position: absolute;
-    }
-    footer h4{
-        font-size: 1rem;
-    }
-}
+        border-radius: 5rem; } }
+
+/* estilos para ubicacion-celular */
+header .titulo h1 {
+  margin: 0rem;
+  height: 74px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold; }
+
+header nav ul {
+  padding: 0rem;
+  margin: 0rem; }
+  header nav ul .menu-opcion {
+    padding: 0rem 0.3rem;
+    margin: 0.1rem 0rem;
+    height: 18px; }
+    header nav ul .menu-opcion a {
+      font-family: 'Arimo', sans-serif; }
+
+main .direccion {
+  margin: 0rem 1rem; }
+  main .direccion .ajuste {
+    margin: 1.7rem 0rem;
+    padding: 1rem;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3); }
+    main .direccion .ajuste h2 {
+      padding-bottom: 0.5rem; }
+  main .direccion .aeropuerto {
+    margin: 1.7rem 0rem;
+    padding: 1rem;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3); }
+    main .direccion .aeropuerto ul {
+      padding-left: 1rem;
+      list-style: circle; }
+
+.footer-ubicacion {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  font-family: 'Arimo', sans-serif; }
+  .footer-ubicacion h4 {
+    font-size: 1rem;
+    margin: 0rem; }
+
+/* mq ubicacion para tablet desde 800 a 1200px */
+@media screen and (min-width: 800px) {
+  .direccion {
+    margin: 0rem 5rem; } }
+
+/* estilos para footer todas las paginas */
+footer h4 {
+  background-color: black;
+  color: whitesmoke;
+  text-align: center; }

@@ -1,0 +1,69 @@
+/* estilos para ubicacion-celular */
+header{
+    .titulo{
+        h1{
+            margin: 0rem;
+            height: 74px;
+            font-family: 'Arimo', sans-serif;
+            font-weight: bold;
+        }
+    }
+    nav{
+        ul{
+            padding: 0rem;
+            margin: 0rem;
+            .menu-opcion{
+                padding: 0rem 0.3rem;
+                margin: 0.1rem 0rem;
+                height: 18px;
+                a{
+                    font-family: 'Arimo', sans-serif;                    
+                }
+            }
+        }
+    }
+}
+main{
+    .direccion{
+        margin: 0rem 1rem;
+        .ajuste{
+            margin: 1.7rem 0rem;
+            padding: 1rem;
+            box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+                    0 0  0 2px rgb(255,255,255),
+                    0.3em 0.3em 1em rgba(0,0,0,0.3);
+            h2{
+                padding-bottom: 0.5rem;
+            }
+        }
+        .aeropuerto{
+            margin: 1.7rem 0rem;
+            padding: 1rem;
+            box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+                    0 0  0 2px rgb(255,255,255),
+                    0.3em 0.3em 1em rgba(0,0,0,0.3);
+            ul{
+                padding-left: 1rem;
+                list-style: circle;
+            }
+        }
+    }
+}
+.footer-ubicacion{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    font-family: 'Arimo', sans-serif;
+    h4{
+       font-size: 1rem;
+       margin: 0rem;
+    }
+    
+}
+/* mq ubicacion para tablet desde 800 a 1200px */
+@media screen and (min-width: 800px){
+    .direccion{
+        margin: 0rem 5rem;
+    }
+}
+    
