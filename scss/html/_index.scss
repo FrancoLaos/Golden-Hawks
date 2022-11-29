@@ -3,7 +3,7 @@ main{
     .bienvenidos{
         background-image: url(../img/img-cabina320.png);
         background-size: cover;
-        height: 250px;
+        height: 16rem;
         .texto-bienvenidos{
             position: relative;
             color: whitesmoke;
@@ -67,7 +67,7 @@ main{
     main{
         .bienvenidos{
             background-size: cover;
-            height: 500px;
+            height: 32rem;
             .texto-bienvenidos{
                 font-size: 1.5rem;
                 position: relative;
@@ -139,12 +139,12 @@ main{
 @media screen and (min-width: 1200px){
     body{
         main{
-            .bienvenidos{
-                background-size: cover;
+            .bienvenidos{    
+                height: 55rem;            
                 .texto-bienvenidos{
                     font-size: 2rem;
                     position: relative;
-                    top: 15rem;
+                    top: 20rem;
                     h2{
                         padding-bottom: 1rem;
                     }

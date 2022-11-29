@@ -34,11 +34,19 @@ main{
         .cursos-blanco{
             background-color: #a87b05;
             padding: 0rem 0.5rem 1rem 0.5rem;
+            p{
+                text-align: justify;
+                padding-top: 1rem;
+            }
         }
         .cursos-negro{
             color: whitesmoke;
             padding: 0rem 0.5rem 1rem 0.5rem;
             background-color: black;
+            p{
+                text-align: justify;
+                padding-top: 1rem;
+            }
         }
         img{
             margin-top: 1.5rem;

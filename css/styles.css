@@ -79,7 +79,7 @@ body {
 main .bienvenidos {
   background-image: url(../img/img-cabina320.png);
   background-size: cover;
-  height: 250px; }
+  height: 16rem; }
   main .bienvenidos .texto-bienvenidos {
     position: relative;
     color: whitesmoke;
@@ -134,7 +134,7 @@ main .contenedor .img-check {
 @media screen and (min-width: 800px) {
   main .bienvenidos {
     background-size: cover;
-    height: 500px; }
+    height: 32rem; }
     main .bienvenidos .texto-bienvenidos {
       font-size: 1.5rem;
       position: relative;
@@ -187,11 +187,11 @@ main .contenedor .img-check {
 /* mq index para monitor desde 1200px */
 @media screen and (min-width: 1200px) {
   body main .bienvenidos {
-    background-size: cover; }
+    height: 55rem; }
     body main .bienvenidos .texto-bienvenidos {
       font-size: 2rem;
       position: relative;
-      top: 15rem; }
+      top: 20rem; }
       body main .bienvenidos .texto-bienvenidos h2 {
         padding-bottom: 1rem; }
   body main .contenedor .img-cessna {
@@ -229,10 +229,16 @@ main .cursos {
   main .cursos .cursos-blanco {
     background-color: #a87b05;
     padding: 0rem 0.5rem 1rem 0.5rem; }
+    main .cursos .cursos-blanco p {
+      text-align: justify;
+      padding-top: 1rem; }
   main .cursos .cursos-negro {
     color: whitesmoke;
     padding: 0rem 0.5rem 1rem 0.5rem;
     background-color: black; }
+    main .cursos .cursos-negro p {
+      text-align: justify;
+      padding-top: 1rem; }
   main .cursos img {
     margin-top: 1.5rem;
     padding: 0rem 0.5rem 1rem 0.5rem;
@@ -321,19 +327,16 @@ main .cursos {
 /* estilos para ubicacion-celular */
 header .titulo h1 {
   margin: 0rem;
-  height: 74px;
   font-family: 'Arimo', sans-serif;
   font-weight: bold; }
 
-header nav ul {
+header nav .menu-ubicacion {
   padding: 0rem;
   margin: 0rem; }
-  header nav ul .menu-opcion {
-    padding: 0rem 0.3rem;
-    margin: 0.1rem 0rem;
-    height: 18px; }
-    header nav ul .menu-opcion a {
-      font-family: 'Arimo', sans-serif; }
+  header nav .menu-ubicacion .menu-opcion {
+    font-family: 'Arimo', sans-serif;
+    padding-top: 0px;
+    height: 20.5px; }
 
 main .ajuste {
   margin: 0rem 1rem; }
@@ -366,6 +369,9 @@ main .ajuste {
 
 /* mq ubicacion para tablet desde 800 a 1200px */
 @media screen and (min-width: 800px) {
+  header nav .menu-ubicacion .menu-opcion {
+    height: 27.5px;
+    padding: 0px 10px; }
   main .ajuste {
     margin: 2rem 8rem;
     text-align: center; }
