@@ -1,0 +1,99 @@
+/* estilos para contactanos-celular */
+body{
+    header{
+        padding-top: 0.5rem;
+    }
+    .fondo{
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        height: 46rem;
+        .contactanos{
+            padding: 1rem;
+            color: black;
+            p{
+                font-size: 1.2rem;
+                padding-top: 1rem;
+            }
+        }
+        .espacio-formulario{
+            .formulario{
+                width: 95%;
+                background-color: #24303c;
+                padding: 1.8rem;
+                margin: 0.2rem 0rem 2rem 0.5rem;
+                border-radius: 0.5rem;
+                color: whitesmoke;
+                box-shadow: 1rem 1rem 2rem black;
+                h3{
+                    font-size: 1.3rem;
+                    margin-bottom: 1.2rem;
+                }
+                .botones{
+                    width: 100%;
+                    background-color: #24303c;
+                    padding: 0.6rem;
+                    border-radius: 0.2rem;
+                    margin-bottom: 1rem;
+                    border: 1px solid #1f53c5;
+                    font-size: 1.1rem;
+                }
+                p{
+                    height: 2.5rem;
+                    text-align: center;
+                    font-size: 1rem;
+                    line-height: 2rem;
+                }
+                a{
+                    color: whitesmoke;
+                    text-decoration: none;
+                }
+                a:hover{
+                    color: whitesmoke;
+                    text-decoration: underline;
+                }
+                .registrar{
+                    width: 100%;
+                    background-color: #1f53c5;
+                    border: none;
+                    padding: 0.8rem;
+                    color: whitesmoke;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .footer-especial{
+        position: relative;
+        width: 100%;
+        bottom: 0%;
+    }
+}
+/* mq para contactanos tablet desde 800 a 1200px */
+@media screen and (min-width: 800px){
+    body{
+        .fondo{
+            .contactanos{
+                padding: 1rem 2rem;
+            }
+            .espacio-formulario{
+                margin: 0% 10%;
+                .formulario{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+/* mq para contactanos monitor desde 1200px */
+@media screen and (min-width: 1200px){
+    body{
+        .fondo{
+            .espacio-formulario{
+                margin: 2% 30%;
+                .formulario{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

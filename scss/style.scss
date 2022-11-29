@@ -4,8 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: whitesmoke;
+// import para color de body
+@import "utilidades/variables";
+main{
+    background-color: gray;
 }
 /* Header para celular */
 header{
@@ -107,9 +109,9 @@ body{
 // Import para ubicacion
 @import "html/ubicacion";
 // Import para eventos
-
+@import "html/eventos";
 // Import para contactanos
-
+@import "html/contactanos";
 /* estilos para footer todas las paginas */
 footer{
     h4{

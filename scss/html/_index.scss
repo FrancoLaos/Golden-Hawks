@@ -51,7 +51,7 @@ main{
         .caracteristica4{
             display: block;
             margin-left: 5.5rem;
-            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
             align-items: center;
             display: flex;
         }
@@ -137,29 +137,30 @@ main{
 }
 /* mq index para monitor desde 1200px */
 @media screen and (min-width: 1200px){
-    main{
-        .bienvenidos{
-            height: 900px;
-            background-size: cover;
-            .texto-bienvenidos{
-                font-size: 2rem;
-                position: relative;
-                top: 15rem;
-                h2{
-                    padding-bottom: 1rem;
+    body{
+        main{
+            .bienvenidos{
+                background-size: cover;
+                .texto-bienvenidos{
+                    font-size: 2rem;
+                    position: relative;
+                    top: 15rem;
+                    h2{
+                        padding-bottom: 1rem;
+                    }
                 }
             }
-        }
-        .contenedor{
-            .img-cessna{
-                width: 75%;
-            }
-            .online{
-                h2{
-                    font-size: 2.2rem;
+            .contenedor{
+                .img-cessna{
+                    width: 75%;
                 }
-                p{
-                    font-size: 1.3rem;
+                .online{
+                    h2{
+                        font-size: 2.2rem;
+                    }
+                    p{
+                        font-size: 1.3rem;
+                    }
                 }
             }
         }
