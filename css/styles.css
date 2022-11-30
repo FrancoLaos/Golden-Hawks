@@ -68,6 +68,8 @@ header {
     padding: 0.7rem 0rem 1rem 0.3rem; }
     header img {
       width: 180px; }
+    header nav ul li {
+      transition: 0.3s; }
     header nav ul li:hover {
       transform: scale(1.2); } }
 

@@ -90,6 +90,7 @@ header{
         nav{
             ul{
                 li{
+                    transition: 0.3s;
                 }
                 li:hover{
                     transform: scale(1.2);
