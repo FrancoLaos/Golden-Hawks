@@ -17,10 +17,11 @@ body{
         }
         .espacio-formulario{
             .formulario{
-                width: 95%;
+                width: 90%;
+                text-align: center;
                 background-color: #24303c;
-                padding: 1.8rem;
-                margin: 0.2rem 0rem 2rem 0.5rem;
+                padding: 2rem;
+                margin: 0.5rem 0rem 2rem 1rem;
                 border-radius: 0.5rem;
                 color: whitesmoke;
                 box-shadow: 1rem 1rem 2rem black;
@@ -30,6 +31,7 @@ body{
                 }
                 .botones{
                     width: 100%;
+                    color: darkgoldenrod;
                     background-color: #24303c;
                     padding: 0.6rem;
                     border-radius: 0.2rem;
@@ -73,12 +75,13 @@ body{
     body{
         .fondo{
             .contactanos{
-                padding: 1rem 2rem;
+                padding: 2rem 2rem;
             }
             .espacio-formulario{
                 margin: 0% 10%;
                 .formulario{
                     width: 100%;
+                    margin: 1rem 0rem;
                 }
             }
         }
@@ -88,8 +91,15 @@ body{
 @media screen and (min-width: 1200px){
     body{
         .fondo{
+            .contactanos{
+                padding-top: 2rem;
+                font-size: 1.3rem;
+                p{
+                    font-size: 1.4rem;
+                }
+            }
             .espacio-formulario{
-                margin: 2% 30%;
+                margin: 2% 35%;
                 .formulario{
                     width: 100%;
                 }

@@ -5,7 +5,7 @@
   box-sizing: border-box; }
 
 main {
-  background-color: gray; }
+  background-color: whitesmoke; }
 
 /* Header para celular */
 header {
@@ -227,16 +227,17 @@ main .programa .programa-img img {
 
 main .cursos {
   text-align: center;
+  align-items: center;
   padding: 1rem 2rem 3rem 2rem; }
   main .cursos .cursos-blanco {
     background-color: #a87b05;
-    padding: 0rem 0.5rem 1rem 0.5rem; }
+    padding: 0rem 1.5rem 1rem 1.5rem; }
     main .cursos .cursos-blanco p {
       text-align: justify;
       padding-top: 1rem; }
   main .cursos .cursos-negro {
     color: whitesmoke;
-    padding: 0rem 0.5rem 1rem 0.5rem;
+    padding: 0rem 1.5rem 1rem 1.5rem;
     background-color: black; }
     main .cursos .cursos-negro p {
       text-align: justify;
@@ -279,7 +280,9 @@ main .cursos {
     margin-top: 5rem; }
     main .cursos .cursos-blanco {
       background-color: #a87b05;
-      transition: 0.5s; }
+      transition: 0.5s;
+      padding: 0rem 0.5rem 1rem 0.5rem;
+      align-items: center; }
       main .cursos .cursos-blanco h3 {
         padding: 0.5rem 0rem; }
       main .cursos .cursos-blanco p {
@@ -289,6 +292,8 @@ main .cursos {
     main .cursos .cursos-negro {
       background-color: black;
       color: whitesmoke;
+      padding: 0rem .5rem 1rem 0.5rem;
+      align-items: center;
       transition: 0.5s; }
       main .cursos .cursos-negro h3 {
         padding: 0.5rem 0rem; }
@@ -473,10 +478,11 @@ body .fondo {
       font-size: 1.2rem;
       padding-top: 1rem; }
   body .fondo .espacio-formulario .formulario {
-    width: 95%;
+    width: 90%;
+    text-align: center;
     background-color: #24303c;
-    padding: 1.8rem;
-    margin: 0.2rem 0rem 2rem 0.5rem;
+    padding: 2rem;
+    margin: 0.5rem 0rem 2rem 1rem;
     border-radius: 0.5rem;
     color: whitesmoke;
     box-shadow: 1rem 1rem 2rem black; }
@@ -485,6 +491,7 @@ body .fondo {
       margin-bottom: 1.2rem; }
     body .fondo .espacio-formulario .formulario .botones {
       width: 100%;
+      color: darkgoldenrod;
       background-color: #24303c;
       padding: 0.6rem;
       border-radius: 0.2rem;
@@ -518,16 +525,22 @@ body .footer-especial {
 /* mq para contactanos tablet desde 800 a 1200px */
 @media screen and (min-width: 800px) {
   body .fondo .contactanos {
-    padding: 1rem 2rem; }
+    padding: 2rem 2rem; }
   body .fondo .espacio-formulario {
     margin: 0% 10%; }
     body .fondo .espacio-formulario .formulario {
-      width: 100%; } }
+      width: 100%;
+      margin: 1rem 0rem; } }
 
 /* mq para contactanos monitor desde 1200px */
 @media screen and (min-width: 1200px) {
+  body .fondo .contactanos {
+    padding-top: 2rem;
+    font-size: 1.3rem; }
+    body .fondo .contactanos p {
+      font-size: 1.4rem; }
   body .fondo .espacio-formulario {
-    margin: 2% 30%; }
+    margin: 2% 35%; }
     body .fondo .espacio-formulario .formulario {
       width: 100%; } }
 

@@ -30,10 +30,11 @@ main{
     }
     .cursos{
         text-align: center;
+        align-items: center;
         padding: 1rem 2rem 3rem 2rem;
         .cursos-blanco{
             background-color: #a87b05;
-            padding: 0rem 0.5rem 1rem 0.5rem;
+            padding: 0rem 1.5rem 1rem 1.5rem;
             p{
                 text-align: justify;
                 padding-top: 1rem;
@@ -41,7 +42,7 @@ main{
         }
         .cursos-negro{
             color: whitesmoke;
-            padding: 0rem 0.5rem 1rem 0.5rem;
+            padding: 0rem 1.5rem 1rem 1.5rem;
             background-color: black;
             p{
                 text-align: justify;
@@ -97,6 +98,8 @@ main{
             .cursos-blanco{
                 background-color: #a87b05;
                 transition: 0.5s;
+                padding: 0rem 0.5rem 1rem 0.5rem;
+                align-items: center;
                 h3{
                     padding: 0.5rem 0rem;
                 }
@@ -110,6 +113,8 @@ main{
             .cursos-negro{
                 background-color: black;
                 color: whitesmoke;
+                padding: 0rem .5rem 1rem 0.5rem;
+                align-items: center;
                 transition: 0.5s;
                 h3{
                     padding: 0.5rem 0rem;
