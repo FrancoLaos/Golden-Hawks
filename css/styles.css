@@ -544,8 +544,75 @@ body .footer-especial {
     body .fondo .espacio-formulario .formulario {
       width: 100%; } }
 
-/* estilos para footer todas las paginas */
-footer h4 {
-  background-color: black;
-  color: whitesmoke;
-  text-align: center; }
+/* PRUEBA DE MQ DESKTOP FIRST */
+/* estilos para footer monitor desde 1200px */
+@media screen and (max-width: 4000px) {
+  footer {
+    background-color: black;
+    color: aliceblue; }
+    footer .footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 2rem 0rem; }
+      footer .footer .footer-resumen {
+        width: 45%; }
+        footer .footer .footer-resumen h4 {
+          color: #a87b05;
+          padding-bottom: 1.5rem;
+          font-size: 1.5rem; }
+        footer .footer .footer-resumen p {
+          text-align: justify; }
+      footer .footer .footer-programas h4 {
+        color: #a87b05;
+        padding-bottom: 1.5rem;
+        font-size: 1.5rem; }
+      footer .footer .footer-programas a {
+        text-decoration: none;
+        color: aliceblue;
+        display: block;
+        padding-bottom: 1rem;
+        transition: 0.7s; }
+      footer .footer .footer-programas a:hover {
+        transform: scale(1.2); }
+      footer .footer .footer-contacto h4 {
+        color: #a87b05;
+        padding-bottom: 1.5rem;
+        font-size: 1.5rem; }
+      footer .footer .footer-contacto a {
+        text-decoration: none;
+        color: aliceblue;
+        display: block;
+        padding-bottom: 1rem;
+        transition: 0.7s; }
+      footer .footer .footer-contacto a:hover {
+        transform: scale(1.2); }
+    footer .footer-redes {
+      text-align: center;
+      padding-bottom: 1.5rem; }
+      footer .footer-redes a {
+        padding-left: 1rem; }
+        footer .footer-redes a img {
+          width: 1.5%; }
+    footer .autor {
+      text-align: center;
+      background-color: #11113e;
+      color: whitesmoke;
+      padding: 0.5rem 0rem; } }
+
+/* footer para tablet de 800px a 1199px */
+@media screen and (max-width: 1199px) {
+  footer .footer-redes a img {
+    width: 3.5%; } }
+
+/* footer para celular de 0px a 799px */
+@media screen and (max-width: 799px) {
+  footer .footer {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center; }
+    footer .footer .footer-resumen {
+      width: 70%; }
+  footer .footer-redes a img {
+    width: 7%; } }

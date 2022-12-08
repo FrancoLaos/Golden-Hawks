@@ -113,13 +113,113 @@ body{
 @import "html/eventos";
 // Import para contactanos
 @import "html/contactanos";
-/* estilos para footer todas las paginas */
-footer{
-    h4{
+/* PRUEBA DE MQ DESKTOP FIRST */
+/* estilos para footer monitor desde 1200px */
+@media screen and (max-width: 4000px){
+    footer{
         background-color: black;
-        color: whitesmoke;
-        text-align: center;
+        color: aliceblue;
+        .footer{ 
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 2rem 0rem;
+            .footer-resumen{
+                width: 45%;
+                h4{
+                    color: #a87b05;
+                    padding-bottom: 1.5rem;
+                    font-size: 1.5rem;
+                }
+                p{
+                    text-align: justify;
+                }
+            }
+            .footer-programas{
+                h4{
+                    color: #a87b05;
+                    padding-bottom: 1.5rem;
+                    font-size: 1.5rem;
+                }
+                a{
+                    text-decoration: none;
+                    color: aliceblue;
+                    display: block;
+                    padding-bottom: 1rem;
+                    transition: 0.7s;
+                }
+                a:hover{
+                    transform: scale(1.2);
+                }
+            }
+            .footer-contacto{
+                h4{
+                    color: #a87b05;
+                    padding-bottom: 1.5rem;
+                    font-size: 1.5rem;
+                }
+                a{
+                    text-decoration: none;
+                    color: aliceblue;
+                    display: block;
+                    padding-bottom: 1rem;
+                    transition: 0.7s;
+                }
+                a:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .footer-redes{
+            text-align: center;
+            padding-bottom: 1.5rem;
+            a{
+                padding-left: 1rem;
+                img{
+                    width: 1.5%;
+                }
+            }
+        }
+        .autor{
+            text-align: center;
+            background-color: rgb(17, 17, 62);
+            color: whitesmoke;
+            padding: 0.5rem 0rem;
+        }
     }
 }
 
+/* footer para tablet de 800px a 1199px */
+@media screen and (max-width: 1199px){
+    footer{
+        .footer-redes{
+            a{
+                img{
+                    width: 3.5%;
+                }
+            }
+        }
+    }
+}
+/* footer para celular de 0px a 799px */
+@media screen and (max-width: 799px){
+    footer{
+        .footer{
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+            text-align: center;
+            .footer-resumen{
+                width: 70%;
+            }
+        } 
+        .footer-redes{
+            a{
+                img{
+                    width: 7%;
+                }
+            }
+        }    
+    }
+}
 
