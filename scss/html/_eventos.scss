@@ -36,6 +36,7 @@
 @media screen and (min-width: 800px){
     .ajuste-eventos{
         padding: 1rem 1.5rem;
+        margin-top: 3rem;
         .redes{
             font-size: 1.5rem;
         }
@@ -67,5 +68,21 @@
 }
 /* mq para eventos monitor desde 1200px */
 @media screen and (min-width: 1200px){
-    /* no es necesario ya que los iframe son responsive */
+    .ajuste-eventos{
+        margin-top: 0rem;
+        .redes{
+        }
+        div{
+            .img-redes{
+                li{
+                    .fb{
+                        width: 1.5%;
+                    }
+                    .ig{
+                        width: 1.5%;
+                    }
+                }
+            }
+        }
+    }
 }

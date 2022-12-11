@@ -1,5 +1,8 @@
 /* estilos para index-celular */
 main{
+    p{
+        margin-bottom: 0rem;
+    }
     .bienvenidos{
         background-image: url(../img/img-cabina320.png);
         background-size: cover;
@@ -10,7 +13,8 @@ main{
             top: 50px;
             padding: 0.3rem 1rem 0rem 1rem;
             h2{
-                padding-bottom: 0.5rem;
+                margin-bottom: 0.1rem;
+                font-size: 1.5rem;
             }
         }
     }
@@ -21,10 +25,10 @@ main{
             }
         }
         .online{
-            padding: 0.5rem 1rem 1rem 1rem;
+            padding: 1rem 1rem;
             h2{
                 color: rgb(160, 16, 16);
-                padding-bottom: 1rem;
+                padding-bottom: 0.5rem;
             }
         }
         .caracteristica1{
@@ -58,7 +62,9 @@ main{
         .img-check{
             width: 8%;
             padding-right: 0.5rem;
+            margin-top: 0.5rem;
             height: 10%;
+            align-self: flex-start;
         }
     }
 }
@@ -74,6 +80,7 @@ main{
                 top: 10rem;
                 h2{
                     padding-bottom: 1rem;
+                    font-size: 2rem;
                 }
             }
         }
@@ -104,6 +111,7 @@ main{
                 img{
                     width: 12%;
                     height: 25%;
+                    margin-top: 1.3rem;
                 }
             }
             .caracteristica2{
@@ -112,6 +120,7 @@ main{
                 img{
                     width: 12%;
                     height: 25%;
+                    margin-top: 1.3rem;
                 }
             }
             .caracteristica3{
@@ -120,6 +129,7 @@ main{
                 img{
                     width: 12%;
                     height: 25%;
+                    margin-top: 1.3rem;
                 }
             }
             .caracteristica4{
@@ -130,6 +140,7 @@ main{
                 img{
                     width: 12%;
                     height: 25%;
+                    margin-top: 1.3rem;
                 }
             }
         }
@@ -147,6 +158,7 @@ main{
                     top: 20rem;
                     h2{
                         padding-bottom: 1rem;
+                        font-size: 3rem;
                     }
                 }
             }
@@ -161,6 +173,11 @@ main{
                     p{
                         font-size: 1.3rem;
                     }
+                }
+                .img-check{
+                    width: 10%;
+                    align-self: center;
+                    margin-top: 0rem;
                 }
             }
         }

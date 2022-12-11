@@ -1,7 +1,7 @@
 /* reset */
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0rem;
+    padding: 0rem;
     box-sizing: border-box;
 }
 // import para color de body
@@ -11,66 +11,106 @@ main{
 }
 /* Header para celular */
 header{
+    height: 6rem;
     background-color: black;
-    h1{
-        color: #a87b05;
-        font-size: 2rem;
-    }
-    .titulo{
-        display: flex;
-        gap: 0.5rem;
-        align-items: center;
-    }
-    img{
-        width: 30%;
-    }
-    nav{
-        text-align: left;
-        padding: 0.7rem 1rem;
-        ul{
-            list-style: none;
-            li{
-                display: inline-block;
-                font-size: 1rem;
-                background-color: #a87b05;
-                padding: 1px 5px 1px 5px;
-                margin-top: 5px;
-                box-shadow: 1px 1px 2px #e9b125;
-                border-radius: 100px;
-                text-shadow: 1px 1px 5px black;
-                a{
-                    text-decoration: none;
-                    color: whitesmoke;
+    padding: 0rem;
+    .navbar{
+        padding: 0rem;
+        .container-fluid{
+            padding: 0rem;
+            background-color: black;
+            .navbar-brand{
+                color: #a87b05;
+                margin: 0rem;
+                padding: 0rem;
+                font-size: 1.8rem;
+                img{
+                    width: 21%;
+                }
+            }
+            .ajuste-menu{
+                margin-left: 20rem;
+                .navbar-toggler{
+                    margin-bottom: 0.35rem;
+                    margin-left: 1rem;
+                    background-color: #8b6505;
+                    padding: 0rem;
+                    .navbar-toggler-icon{
+                        background-size: 55%;
+                    }             
+                }
+            }
+            .offcanvas{
+                width: 45%;
+                height: 40%;
+                background-color: #8b6505;
+                border-bottom-left-radius: 1rem;
+                .offcanvas-header{
+                    .offcanvas-title{
+                        color: black;
+                    }
+                }
+                .offcanvas-body{
+                    color: black;
+                    .navbar-nav{
+                        .nav-copyright{
+                            p{
+                                font-size: 0.5rem;
+                                margin: 1.5rem 0rem 0.2rem 0rem;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
+    
+}
+.header-monitor{
+    display: none;
 }
 /* Header para tablet desde 800px */
-@media screen and (min-width: 800px){
+@media screen and (min-width: 700px){
     header{
-        .titulo{
-        display: block;
-        display: flex;        
-        align-items: center;
-        padding: 0.7rem 0rem 0rem 0.3rem; 
-        }
-        img{
-            width: 140px;
-        }
-        h1{
-            font-size: 2.9rem;
-        }
-        nav{
-            ul{
-                display: block;
-                display: flex;
-                li{
-                    display: block;
-                    font-size: 1.4rem;
-                    padding: 1px 10px 1px 10px;
-                    margin: 0px 7px 0px 7px;
-                    transition: 0.3s;
+        .navbar{
+            .container-fluid{
+                .navbar-brand{
+                    font-size: 3.4rem;
+                    img{
+                        width: 20%;
+                    }
+                }
+                .ajuste-menu{
+                    margin-left: 1.5rem;
+                    .navbar-toggler{
+                        width: 80%;
+                        .navbar-toggler-icon{
+                            background-size: 80%;
+                        }
+                    }
+                }
+                .offcanvas{
+                    width: 35%;
+                    height: 37%;
+                    .offcanvas-header{
+                        .offcanvas-title{
+                            font-size: 2rem;
+                        }
+                    }
+                    .offcanvas-body{
+                        .navbar-nav{
+                            .nav-item{
+                                .nav-link{
+                                    font-size: 1.5rem;
+                                }
+                            }
+                            .nav-copyright{
+                                p{
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -79,21 +119,44 @@ header{
 /* Header para monitor desde 1200px */
 @media screen and (min-width: 1200px){
     header{
-        display: block;
-        display: flex;        
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.7rem 0rem 1rem 0.3rem;
-        img{
-            width: 180px;
+        display: none;
+    }
+    .header-monitor{
+        display: revert;
+        background-color: black;
+        .titulo{
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            img{
+                width: 11%;
+            }
+            h1{
+                font-size: 4rem;
+                color: #8b6505;
+            }
         }
+    }
+    .menu-monitor{
         nav{
+            text-align: left;
+            padding: 0.7rem 1rem;
             ul{
+                list-style: none;
                 li{
-                    transition: 0.3s;
-                }
-                li:hover{
-                    transform: scale(1.2);
+                    display: inline-block;
+                    font-size: 1.4rem;
+                    background-color: #a87b05;
+                    padding: 1px 5px 1px 5px;
+                    margin-top: 5px;
+                    margin-right: 0.5rem;
+                    box-shadow: 1px 1px 2px #e9b125;
+                    border-radius: 100px;
+                    text-shadow: 1px 1px 5px black;
+                    a{
+                        text-decoration: none;
+                        color: whitesmoke;
+                    }
                 }
             }
         }
@@ -113,6 +176,7 @@ body{
 @import "html/eventos";
 // Import para contactanos
 @import "html/contactanos";
+
 /* PRUEBA DE MQ DESKTOP FIRST */
 /* estilos para footer monitor desde 1200px */
 @media screen and (max-width: 4000px){
@@ -184,7 +248,9 @@ body{
             text-align: center;
             background-color: rgb(17, 17, 62);
             color: whitesmoke;
-            padding: 0.5rem 0rem;
+            p{
+                margin-bottom: 0rem;
+            }
         }
     }
 }
