@@ -86,7 +86,8 @@ header {
     display: none; }
   .header-monitor {
     display: revert;
-    background-color: black; }
+    background-color: black;
+    padding-top: 1rem; }
     .header-monitor .titulo {
       display: flex;
       gap: 0.5rem;
@@ -95,7 +96,8 @@ header {
         width: 11%; }
       .header-monitor .titulo h1 {
         font-size: 4rem;
-        color: #8b6505; }
+        color: #8b6505;
+        font-family: 'Arimo', sans-serif; }
   .menu-monitor nav {
     text-align: left;
     padding: 0.7rem 1rem; }

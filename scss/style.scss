@@ -134,6 +134,7 @@ header{
     .header-monitor{
         display: revert;
         background-color: black;
+        padding-top: 1rem;
         .titulo{
             display: flex;
             gap: 0.5rem;
@@ -144,6 +145,7 @@ header{
             h1{
                 font-size: 4rem;
                 color: #8b6505;
+                font-family: 'Arimo', sans-serif;
             }
         }
     }
