@@ -1,8 +1,5 @@
 /* estilos para contactanos-celular */
 body{
-    header{
-        padding-top: 0.5rem;
-    }
     .fondo{
         background: rgb(238,174,202);
         background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
@@ -74,9 +71,15 @@ body{
 @media screen and (min-width: 800px){
     body{
         .fondo{
-            margin-top: 2.8rem;
+            height: 50rem;
             .contactanos{
                 padding: 2rem 2rem;
+                h2{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1.5rem;
+                }
             }
             .espacio-formulario{
                 margin: 0% 10%;

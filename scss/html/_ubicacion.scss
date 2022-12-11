@@ -1,35 +1,24 @@
 /* estilos para ubicacion-celular */
-header{
-    .titulo{
-        h1{
-            margin: 0rem;
-            font-family: 'Arimo', sans-serif;
-            font-weight: bold;
-        }
-    }
-    nav{
-        .menu-ubicacion{
-            padding: 0rem;
-            margin: 0rem;
-            .menu-opcion{
-                font-family: 'Arimo', sans-serif;
-                padding-top: 0px;
-                height: 20.5px;
-            }
-        }
-    }
+body{
+    background-color: whitesmoke;
 }
 main{
     .ajuste{
-        margin: 0rem 1rem;
+        padding: 1rem 1rem;
         .direccion{
-            margin: 1.7rem 0rem;
+            margin: 0rem 0rem;
             padding: 1rem;
             box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
                     0 0  0 2px rgb(255,255,255),
                     0.3em 0.3em 1em rgba(0,0,0,0.3);
             h2{
                 padding-bottom: 0.5rem;
+            }
+        }
+        .googlemaps{
+            padding-top: 1rem;
+            iframe{
+                width: 100%;
             }
         }
         .aeropuerto{
@@ -49,6 +38,9 @@ main{
                 margin-bottom: 2rem;
             }
         }
+    }
+    .carousel{
+        padding-bottom: 1rem;
     }
 }
 .footer-ubicacion{
@@ -77,12 +69,18 @@ main{
     }
     main{
         .ajuste{
-            margin: 2rem 8rem;
+            padding: 2.5rem 8rem;
             text-align: center;
+            .direccion{
+                p{
+                    font-size: 1.5rem;
+                }
+            }
             .aeropuerto{
                 ul{
                     li{
                         list-style: none;
+                        font-size: 1.5rem;
                     }
                 }
             }
@@ -101,26 +99,34 @@ main{
 @media screen and (min-width: 1200px){
     main{
         .ajuste{
+            padding: 3rem;
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 0.5fr 1fr;
             grid-template-areas: 
             "direccion aeropuerto"
-            "pista pista";
+            "maps pista";
             justify-items: center;
             align-items: center;
             .direccion{
                 grid-area: direccion;
                 font-size: 1.5rem;
-                padding: 1rem 2rem;
+                padding: 1rem 1.5rem;
                 box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
                             0 0  0 2px rgb(255,255,255),
                             0.3em 0.3em 1em rgba(0,0,0,0.3);
             }
+            .googlemaps{
+                grid-area: maps;
+                padding: 0rem;
+                width: 90%;
+                align-self: start;
+            }
             .aeropuerto{
                 grid-area: aeropuerto;
+                height: 194.4px;
                 font-size: 1.7rem;
-                padding: 1rem 3rem;
+                padding: 1rem 3.5rem;
                 box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
                             0 0  0 2px rgb(255,255,255),
                             0.3em 0.3em 1em rgba(0,0,0,0.3);
@@ -128,7 +134,7 @@ main{
             .pista{
                 grid-area: pista;
                 img{
-                    width: 80%;
+                    width: 90%;
                 }
             }
             
