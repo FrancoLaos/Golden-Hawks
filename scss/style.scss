@@ -82,10 +82,10 @@ header{
                 height: 194px;
                 .navbar-brand{
                     img{
-                        width: 55%;
+                        width: 50%;
                     }
                     .titulo-golden{
-                        font-size: 3rem;
+                        font-size: 3.5rem;
                     }
                 }
                 .ajuste-menu{
@@ -134,9 +134,9 @@ header{
     .header-monitor{
         display: revert;
         background-color: black;
-        padding-top: 1rem;
         .titulo{
             display: flex;
+            padding-top: 1rem;
             gap: 0.5rem;
             align-items: center;
             img{

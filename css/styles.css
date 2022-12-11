@@ -60,9 +60,9 @@ header {
     header .navbar .container-fluid {
       height: 194px; }
       header .navbar .container-fluid .navbar-brand img {
-        width: 55%; }
+        width: 50%; }
       header .navbar .container-fluid .navbar-brand .titulo-golden {
-        font-size: 3rem; }
+        font-size: 3.5rem; }
       header .navbar .container-fluid .ajuste-menu {
         margin-top: 2rem; }
         header .navbar .container-fluid .ajuste-menu .navbar-toggler {
@@ -86,10 +86,10 @@ header {
     display: none; }
   .header-monitor {
     display: revert;
-    background-color: black;
-    padding-top: 1rem; }
+    background-color: black; }
     .header-monitor .titulo {
       display: flex;
+      padding-top: 1rem;
       gap: 0.5rem;
       align-items: center; }
       .header-monitor .titulo img {
