@@ -6,6 +6,8 @@
 }
 // import para color de body
 @import "utilidades/variables";
+// Import de mixin
+@import "utilidades/mixin";
 main{
     background-color: $color-fondo;
 }
@@ -192,7 +194,6 @@ body{
 @import "html/eventos";
 // Import para contactanos
 @import "html/contactanos";
-
 /* PRUEBA DE MQ DESKTOP FIRST */
 /* estilos para footer monitor desde 1200px */
 @media screen and (max-width: 4000px){

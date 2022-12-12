@@ -53,7 +53,7 @@
             }
         }
         .instagram{
-            display: flex;
+            @include estructura;
             flex-wrap: wrap;
             justify-content: space-evenly;
             div{

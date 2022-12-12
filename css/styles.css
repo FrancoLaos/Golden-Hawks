@@ -150,28 +150,28 @@ main {
       padding-bottom: 0.5rem; }
   main .contenedor .caracteristica1 {
     display: block;
-    margin-left: 5.5rem;
     display: flex;
+    margin-left: 5.5rem;
     align-items: center;
     margin-bottom: 1rem; }
   main .contenedor .caracteristica2 {
     display: block;
+    display: flex;
     margin-left: 5.5rem;
     margin-bottom: 1rem;
-    align-items: center;
-    display: flex; }
+    align-items: center; }
   main .contenedor .caracteristica3 {
     display: block;
+    display: flex;
     margin-left: 5.5rem;
     margin-bottom: 1rem;
-    align-items: center;
-    display: flex; }
+    align-items: center; }
   main .contenedor .caracteristica4 {
     display: block;
+    display: flex;
     margin-left: 5.5rem;
     padding-bottom: 1.5rem;
-    align-items: center;
-    display: flex; }
+    align-items: center; }
   main .contenedor .img-check {
     width: 8%;
     padding-right: 0.5rem;
@@ -516,6 +516,7 @@ main .carousel {
       .ajuste-eventos div .img-redes li .ig {
         width: 3%; }
     .ajuste-eventos .instagram {
+      display: block;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly; }
